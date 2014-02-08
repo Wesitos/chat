@@ -1,23 +1,37 @@
 hackspace_uni_chat_homepage:
-    pattern:  /hello/{name}
-    defaults: { _controller: HackspaceUniChatBundle:Default:index }
+  pattern:  /
+  defaults: { _controller: HackspaceUniChatBundle:Default:index }
 
 hackspace_uni_chat_contacts:
-    pattern:  /contacts
-    defaults: { _controller: HackspaceUniChatBundle:Default:contacts }
+  pattern:  /contacts
+  defaults: { _controller: HackspaceUniChatBundle:Default:contacts }
 
 hackspace_uni_chat_legal:
-    pattern:  /legal
-    defaults: { _controller: HackspaceUniChatBundle:Default:legal }
+  pattern:  /legal
+  defaults: { _controller: HackspaceUniChatBundle:Default:legal }
+
+
+
+hackspace_uni_chat_login:
+  pattern: /login
+  defaults: { _controller: HackspaceUniChatBundle:Security:login}
+
+hackspace_uni_chat_login_check:
+  pattern: /login_check
+
+hackspace_uni_chat_logout:
+  pattern: /logout
+
+
 
 hackspace_uni_chat_chat:
-    pattern:  /chat
-    defaults: { _controller: HackspaceUniChatBundle:Default:chat }
+  pattern:  /chat
+  defaults: { _controller: HackspaceUniChatBundle:Default:chat }
 
 HackspaceUniChatBundle_usuario:
-    resource: "@HackspaceUniChatBundle/Resources/config/routing/usuario.yml"
-    prefix:   /usuario
+  resource: "@HackspaceUniChatBundle/Resources/config/routing/usuario.yml"
+  prefix:   /usuario
 
 HackspaceUniChatBundle_canal:
-    resource: "@HackspaceUniChatBundle/Resources/config/routing/canal.yml"
-    prefix:   /canal
+  resource: "@HackspaceUniChatBundle/Resources/config/routing/canal.yml"
+  prefix:   /canal

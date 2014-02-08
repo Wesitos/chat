@@ -24,9 +24,10 @@ class MensajeType extends AbstractType
    */
   public function setDefaultOptions(OptionsResolverInterface $resolver)
   {
-    $resolver->setDefaults(array(
-				 'data_class' => 'HackspaceUni\ChatBundle\Entity\Mensaje'
-				 ));
+    $resolver->setDefaults( array(
+				  'data_class' => 'HackspaceUni\ChatBundle\Entity\Mensaje'
+				  )
+			    );
   }
 
   /**

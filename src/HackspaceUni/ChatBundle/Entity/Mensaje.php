@@ -103,4 +103,50 @@ class Mensaje
     {
         return $this->fecha;
     }
+
+    /**
+     * Set usuario
+     *
+     * @param \HackspaceUni\ChatBundle\Entity\Usuario $usuario
+     * @return Mensaje
+     */
+    public function setUsuario(\HackspaceUni\ChatBundle\Entity\Usuario $usuario = null)
+    {
+        $this->usuario = $usuario;
+
+        return $this;
+    }
+
+    /**
+     * Get usuario
+     *
+     * @return \HackspaceUni\ChatBundle\Entity\Usuario 
+     */
+    public function getUsuario()
+    {
+        return $this->usuario;
+    }
+
+    /**
+     * Set canal
+     *
+     * @param \HackspaceUni\ChatBundle\Entity\Canal $canal
+     * @return Mensaje
+     */
+    public function setCanal(\HackspaceUni\ChatBundle\Entity\Canal $canal = null)
+    {
+        $this->canal = $canal;
+
+        return $this;
+    }
+
+    /**
+     * Get canal
+     *
+     * @return \HackspaceUni\ChatBundle\Entity\Canal 
+     */
+    public function getCanal()
+    {
+        return $this->canal;
+    }
 }
